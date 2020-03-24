@@ -1,0 +1,45 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+  <div class="white-bg mt-4">
+    <div class="container p-4">
+      {{ content }}
+    </div>
+    {% if indexVideo %}
+      <div class="container">
+        <div class="index-video">
+          <video controls poster="/files/{{indexVideo|replace({'.mp4': '.mp4.png'})}}">
+            <source src="/files/{{ indexVideo }}" type="video/mp4">
+            Dein Browser kann dieses Video leider nicht abspielen
+          </video>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+  <div class="container">
+    <div class="folders">
+      {% for folder in folders %}
+        <div class="folder folder-{{loop.index}}">
+          <h1>{{ folder.name }}</h1>
+          {{folder.content.content}}
+          {% for video in folder.videos %}
+            <video controls poster="/files/{{video|replace({'.mp4': '.mp4.png'})}}">
+              <source src="/files/{{ video }}" type="video/mp4">
+              Dein Browser kann dieses Video leider nicht abspielen
+            </video>
+          {% endfor %}
+          <ul>
+            {% for file in folder.files %}
+              <li>
+                <a href="/files/{{file}}">
+                  <i class="far fa-file-alt"></i>
+                  <span>{{file|split('/')|last|truncate(20, true)}}</span>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

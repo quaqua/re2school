@@ -1,0 +1,39 @@
+body.auth {
+  background: $brand-primary;
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: space-around;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  h3 {
+    font-size: 2em;
+    color: $brand-bg;
+    text-align: center;
+  }
+  .alert {
+    text-align: center;
+    background: $brand-secondary;
+    font-weight: bold;
+  }
+  .form-control {
+    font-size: 2em;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+  }
+  .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 2em;
+    background: $dark;
+    color: $white;
+    text-transform: uppercase;
+  }
+}

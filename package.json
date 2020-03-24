@@ -1,0 +1,25 @@
+{
+  "name": "bienenklasse.school",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon -e js,twig,css ./bin/www"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "front-matter": "^3.1.0",
+    "http-errors": "~1.6.3",
+    "lodash": "^4.17.15",
+    "marked": "^0.8.2",
+    "moment": "^2.24.0",
+    "morgan": "~1.9.1",
+    "node-glob": "^1.2.0",
+    "node-sass": "^4.13.1",
+    "node-sass-middleware": "0.11.0",
+    "twig": "~0.10.3"
+  }
+}

@@ -1,0 +1,16 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+  <div class="container">
+    <h3>Bienenklasse</h3>
+    {% if error %}
+      <div class="alert">{{ error }}</div>
+    {% endif %}
+    <form action="/auth" class="form" method="POST">
+      <input name="password" type="password" class="password form-control" placeholder="Passwort" />
+      <button type="submit" class="btn btn-default">
+        Anmelden
+      </button>
+    </form>
+  </div>
+{% endblock %}

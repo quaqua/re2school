@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Da+2&display=swap');
+@import './components/variables';
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import './components/menu';
+@import './components/auth';
+@import './components/folder';
+
+body, html {
+  height: 100%;
+}
+
+body:not(.auth) {
+  background: $brand-bg;
+}
+
+.white-bg {
+  background: $white;
+}

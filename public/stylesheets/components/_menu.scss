@@ -1,0 +1,20 @@
+.menu {
+  display: flex;
+  align-items: center;
+  .title {
+    font-size: 1.2em;
+    line-height: 1em;
+  }
+  .menu-item {
+    padding: .5em;
+    margin-left: auto;
+    font-size: 2em;
+    line-height: 1em;
+    &.logout {
+      background: $indigo;
+      color: $white;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+}
