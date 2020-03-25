@@ -33,7 +33,8 @@ function clearSession (req, res, next) {
 
 function checkPassword (req, res, next) {
   const pwd = req.body.password
-  if (pwd !== process.env.PWD) return next()
+  console.log('comparing', pwd, process.env.PASSWD)
+  if (pwd !== process.env.PASSWD) return next()
 
   res.cookie('AuthToken', generateAuthToken(), { expire: moment().add(30, 'd')})
   next();

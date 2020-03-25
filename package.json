@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon -e js,twig,css ./bin/www"
+    "start": "npx pm2 --no-daemon start ./bin/www",
+    "dev": "nodemon -e js,twig,css ./bin/www"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
@@ -20,6 +21,7 @@
     "node-glob": "^1.2.0",
     "node-sass": "^4.13.1",
     "node-sass-middleware": "0.11.0",
+    "pm2": "^4.2.3",
     "twig": "~0.10.3"
   }
 }
