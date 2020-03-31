@@ -7201,6 +7201,7 @@ body.auth {
 
 .folder {
   padding: 1em;
+  margin-top: 1em;
   width: 30%;
   background: #BACF29;
   border-radius: 5px;
@@ -7225,6 +7226,18 @@ body.auth {
     background: #899857; }
     .folder.folder-3 h1 {
       color: #899857; }
+  .folder.folder-4 {
+    background: #2b78ff; }
+    .folder.folder-4 h1 {
+      color: #2b78ff; }
+  .folder.folder-5 {
+    background: #8132db; }
+    .folder.folder-5 h1 {
+      color: #8132db; }
+  .folder.folder-6 {
+    background: #474d36; }
+    .folder.folder-6 h1 {
+      color: #474d36; }
   .folder ul {
     padding: 0;
     margin: 0; }

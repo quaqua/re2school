@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "npx pm2 --no-daemon start ./bin/www",
-    "dev": "nodemon -e js,twig,css ./bin/www"
+    "dev": "npx nodemon -e js,twig,css ./bin/www"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
@@ -21,6 +21,7 @@
     "node-glob": "^1.2.0",
     "node-sass": "^4.13.1",
     "node-sass-middleware": "0.11.0",
+    "nodemon": "^2.0.2",
     "pm2": "^4.2.3",
     "twig": "~0.10.3"
   }

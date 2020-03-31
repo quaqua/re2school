@@ -8,6 +8,9 @@
 $folder-color1: #BACF29;
 $folder-color2: #feb72b;
 $folder-color3: #899857;
+$folder-color4: #2b78ff;
+$folder-color5: #8132db;
+$folder-color6: #474d36;
 
 .index-video {
   video {
@@ -18,6 +21,7 @@ $folder-color3: #899857;
 
 .folder {
   padding: 1em;
+  margin-top: 1em;
   width: 30%;
   background: $folder-color1;
   border-radius: 5px;
@@ -48,6 +52,24 @@ $folder-color3: #899857;
     background: $folder-color3;
     h1 {
       color: $folder-color3;
+    }
+  }
+  &.folder-4 {
+    background: $folder-color4;
+    h1 {
+      color: $folder-color4;
+    }
+  }
+  &.folder-5 {
+    background: $folder-color5;
+    h1 {
+      color: $folder-color5;
+    }
+  }
+  &.folder-6 {
+    background: $folder-color6;
+    h1 {
+      color: $folder-color6;
     }
   }
 
