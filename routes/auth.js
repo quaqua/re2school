@@ -15,7 +15,7 @@ const generateAuthToken = () => crypto.randomBytes(30).toString('hex')
 router.post('/',
   checkPassword,
   function(req, res) {
-    if (req.cookies['AuthToken']) return res.redirect('/sheets')
+    if (req.authenticated) return res.redirect('/sheets')
 
     res.render('index', { title: 'Bienenklasse', bodyClass: 'auth', error: 'Falsches Passwort!' });
   })
@@ -33,9 +33,9 @@ function clearSession (req, res, next) {
 
 function checkPassword (req, res, next) {
   const pwd = req.body.password
-  console.log('comparing', pwd, process.env.PASSWD)
   if (pwd !== process.env.PASSWD) return next()
 
+  req.authenticated = true
   res.cookie('AuthToken', generateAuthToken(), { expire: moment().add(30, 'd')})
   next();
 }
