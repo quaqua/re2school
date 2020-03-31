@@ -15,7 +15,8 @@ $folder-color6: #474d36;
 .index-video {
   video {
     object-fit: cover;
-    width: 100%;
+    width: 500px;
+    max-width: 95%;
   }
 }
 

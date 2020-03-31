@@ -4,6 +4,7 @@ services:
 
   app:
     build: .
+    image: registry.flinkwork.com/reschool:latest
     ports:
       - 3000:3000
     tty: true

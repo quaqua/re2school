@@ -7197,7 +7197,8 @@ body.auth {
 
 .index-video video {
   object-fit: cover;
-  width: 100%; }
+  width: 500px;
+  max-width: 95%; }
 
 .folder {
   padding: 1em;
