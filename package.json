@@ -16,7 +16,7 @@
     "http-errors": "~1.6.3",
     "lodash": "^4.17.15",
     "marked": "^0.8.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "morgan": "~1.9.1",
     "node-glob": "^1.2.0",
     "node-sass": "^4.13.1",
